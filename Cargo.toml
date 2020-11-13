@@ -1,0 +1,16 @@
+[package]
+name = "twrs"
+version = "0.1.0"
+authors = ["Sam Rose <hello@samwho.dev>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["macros", "rt-core"], default-features = false }
+egg-mode = { version = "0.15", features = ["rustls_webpki"], default-features = false }
+dialoguer = "0.7"
+serde = "1"
+serde_derive = "1"
+dirs = "3"
+toml = "0.5"
